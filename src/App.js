@@ -1,24 +1,39 @@
-import logo from './logo.svg';
 import './App.css';
+import styled from 'styled-components'
+import { Footer } from './components/Footer'
+import { Header } from './components/Header'
+import { About } from './components/About'
+import { Experience } from './components/Experience'
+import { Skills } from './components/Skills'
+import {Separator} from './components/Separator'
 
 function App() {
+
+   const App = styled.div`
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 12px; 
+    margin: auto;
+    @media only screen and (max-width: 1024px){
+        width: 90%;
+    }
+    @media only screen and (max-width: 512px){
+        width: 100%;
+    }
+    `
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <App className="App">
+      <Header />
+      <About id='about' />
+      < Separator/>
+      <Skills id='skills' />
+      < Separator/>
+      <Experience id='experience' />
+      < Separator/>
+      <Footer/>
+    </App>
   );
 }
 
