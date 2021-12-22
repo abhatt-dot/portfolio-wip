@@ -11,10 +11,11 @@ export const Header = () => {
 
   const Link = styled.a`
   text-decoration: none;
-  color: black;
   display: flex;
   align-items: center;
+  color: white;
   margin: 4px;
+  padding: 1rem;
   `
   const StyledImg = styled.img`
   display: flex;
@@ -45,11 +46,11 @@ export const Header = () => {
   return (
     <Header>
     <Logo>
-      <div> Avni Bhatt </div>
+      {/* <div> Avni Bhatt </div> */}
     </Logo>
       <Nav>
-        <Link href='#about'> <StyledImg src="https://img.icons8.com/material-outlined/24/000000/home--v2.png" alt="home"/> About  </Link>
-        <Link href='#skills'> <StyledImg src="https://img.icons8.com/ios-glyphs/24/000000/laptop.png" alt="laptop"/> Skills </Link>
+        <Link href='#about'> <StyledImg src="https://img.icons8.com/material-outlined/24/000000/home--v2.png" alt="home"/> Home  </Link>
+        <Link href='#skills'> <StyledImg src="https://img.icons8.com/ios-glyphs/24/000000/laptop.png" alt="laptop"/> About </Link>
         <Link href='#experience'> <StyledImg src="https://img.icons8.com/material-outlined/24/000000/briefcase.png" alt="briefcase"/> Experience </Link>
         <Link href='#contact'> <StyledImg src="https://img.icons8.com/material-outlined/24/000000/contact-card.png" alt="address book" /> Contact </Link>
     </Nav>

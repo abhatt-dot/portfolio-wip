@@ -6,6 +6,8 @@ export const Footer = () => {
     const Footer = styled.div`
     display:flex;
     justify-content: space-between;
+    min-width: 100vh;
+    padding: 0 2rem 0 2rem;
     `
     const Link = styled.div`
     padding: 4px;
@@ -15,7 +17,7 @@ export const Footer = () => {
     `
     const Text = styled.div`
       padding: 12px;
-  position: relative;
+      position: relative;
     `
     return (
         <Footer id="contact">

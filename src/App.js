@@ -5,6 +5,7 @@ import { Header } from './components/Header'
 import { About } from './components/About'
 import { Experience } from './components/Experience'
 import { Skills } from './components/Skills'
+import { Bio } from './components/Bio'
 import {Separator} from './components/Separator'
 
 function App() {
@@ -12,9 +13,11 @@ function App() {
    const App = styled.div`
     display: flex;
     flex-direction: column;
-    width: 70%;
+    width: 100%;
     padding: 12px; 
     margin: auto;
+    background-color: black; 
+    color: white; 
     @media only screen and (max-width: 1024px){
         width: 90%;
     }
@@ -27,9 +30,7 @@ function App() {
     <App className="App">
       <Header />
       <About id='about' />
-      < Separator/>
-      <Skills id='skills' />
-      < Separator/>
+      <Bio id='skills' />
       <Experience id='experience' />
       < Separator/>
       <Footer/>

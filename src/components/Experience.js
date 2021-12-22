@@ -7,7 +7,7 @@ export const Experience = () => {
     const Experience = styled.div`
     display: flex;
     flex-direction: column;
-    width: 100%;
+    padding: 0 5% 0 5%; 
     `;
 
     const WorkList = styled.div`
@@ -15,11 +15,11 @@ export const Experience = () => {
     flex-wrap: wrap;
     justify-content: space-between;
     align-items; center;
-    margin: 24px 0px; `
+    margin: 14px 0px; `
 
     const ExperienceTitle = styled.div`
       font-size: 24px;
-    font-weight: 600px; 
+      padding-top: 3rem;
     `
 
      const data = ExperienceData;

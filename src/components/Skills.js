@@ -11,15 +11,17 @@ export const Skills = () => {
     flex-direction: column;
     width: 100%;
     `
+    const SkillsContainer = styled.div`
+    padding: 0 12rem;
+    `
     const SkillsSection = styled.div`
-    display:flex;
+    display: flex;
     justify: space-between;
     margin: 12px 0px;
     width: 100%;
     `
     const SkillsTitle = styled.label`
-    font-size: 24px;
-    font-weight: 600px; 
+    font-size: 24px; 
     `
     const SkillsList = styled.div`
     display:flex;
@@ -29,8 +31,8 @@ export const Skills = () => {
     `
     return (
         <Skills className="skills" id="skills">
-            <SkillsTitle className="section-title"> Skills </SkillsTitle>
-            <div className="skills-container">
+            <SkillsTitle className="section-title">Tech Stack </SkillsTitle>
+            <SkillsContainer className="skills-container">
                 {data.map((item) => {
                     return (
                 <SkillsSection className="skills-section">
@@ -42,7 +44,7 @@ export const Skills = () => {
                     </SkillsSection>
                     );
                 })}
-            </div>
+            </SkillsContainer>
         </Skills>
     )
 }
